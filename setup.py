@@ -12,11 +12,12 @@ def get_scripts_from_bin() -> List[str]:
 
 def get_package_description() -> str:
     """Returns a description of this package from the markdown files."""
-    with open("README.md", "r") as stream:
-        readme: str = stream.read()
-    with open("HISTORY.md", "r") as stream:
-        history: str = stream.read()
-    return f"{readme}\n\n{history}"
+    return 'description'
+    #with open("README.md", "r") as stream:
+    #    readme: str = stream.read()
+    #with open("HISTORY.md", "r") as stream:
+    #    history: str = stream.read()
+    #return f"{readme}\n\n{history}"
 
 
 def get_requirements() -> List[str]:
